@@ -1,0 +1,27 @@
+cookbooks:
+- apps:
+- apps-cloudinary:
+- chef_handler:
+- minitest-handler:
+- users:
+
+environments:
+- staging:
+
+roles:
+- client:
+
+data bags:
+- apps:
+  - princess
+  - toad
+  - www
+- apps_encrypted:
+  - secret secret_file
+  - www
+- users:
+
+nodes:
+- ec2 1:
+  - recipe[minitest-handler] role[client]
+  - --no-host-key-verify -x ubuntu -G default -I ami-3c994355 -f c1.medium -d chef-full --region us-east-1 --environment staging
