@@ -9,7 +9,7 @@ environments:
 - staging:
 
 roles:
-- client:
+- www:
 
 data bags:
 - apps:
