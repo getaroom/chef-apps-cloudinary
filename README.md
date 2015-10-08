@@ -6,10 +6,6 @@ Tested on Ubuntu 12.04
 
 ## default
 
-Configures Cloudinary for apps.
-
-## yaml
-
 Setup cloudinary configs from the apps data bag.
 
 ## yaml
