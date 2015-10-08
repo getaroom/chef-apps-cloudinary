@@ -1,10 +1,8 @@
 {
   "id": "www",
+  "server_roles": ["www"],
   "owner": "www",
   "group": "www",
-  "deploy_to": "/srv/www",
-  "server_roles": ["www"],
-  "ingredients": {
-    "www": ["cloudinary.yml"]
-  }
+  "shell": "/bin/bash",
+  "deploy_to": "/srv/www"
 }
