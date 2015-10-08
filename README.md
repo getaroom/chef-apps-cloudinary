@@ -30,7 +30,7 @@ Generates a cloudinary.yml file.
     "staging": {
       "cloud_name": "abcd1234",
       "api_key": "efgh5678",
-      "api_secret": "ijkl9012",
+      "api_secret": "ijkl9012"
     }
   }
 }
