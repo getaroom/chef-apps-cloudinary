@@ -26,7 +26,7 @@ Generates a cloudinary.yml file.
   "ingredients": {
     "www": ["cloudinary.yml"]
   },
-  "cloudinary" => {
+  "cloudinary": {
     "staging": {
       "cloud_name": "abcd1234",
       "api_key": "efgh5678",
