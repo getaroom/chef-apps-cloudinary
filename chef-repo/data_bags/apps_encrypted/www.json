@@ -1,7 +1,10 @@
 {
   "id": "www",
   "cloudinary": {
-    "production_secret": {
+    "staging": {
+      "api_secret": "secret"
+    },
+    "production": {
       "api_secret": "secret"
     }
   }
