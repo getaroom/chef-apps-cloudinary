@@ -28,17 +28,10 @@ describe_recipe "apps-cloudinary::yaml" do
 
     it "contains information about the cloudinary environments" do
       expected_yaml = {
-        "cloudinary" => {
-          "staging" => {
-            "cloud_name" => "cloud_name",
-            "api_key" => "api_key",
-            "api_secret" => "api_secret",
-          },
-          "production" => {
-            "cloud_name" => "cloud_name",
-            "api_key" => "api_key",
-            "api_secret" => "api_secret",
-          },
+        "staging" => {
+          "cloud_name" => "cloud_name",
+          "api_key" => "api_key",
+          "api_secret" => "secret",
         },
       }
 
