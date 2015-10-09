@@ -32,10 +32,9 @@ search :apps do |base_app|
 
   if (app['server_roles'] & node.run_list.roles).any?
     if app.fetch("ingredients", {}).any? { |role, ingredients| node.run_list.roles.include?(role) && ingredients.include?("cloudinary.yml") }
-      cloudinary_config       = app.fetch("cloudinary", {})
-      chef_environment_config = cloudinary_config.fetch(node['framework_environment'], {})
+      cloudinary_config            = app.fetch("cloudinary", {})
+      framework_environment_config = cloudinary_config.fetch(node['framework_environment'], {})
 
-      framework_environment_config = Chef::Mixin::DeepMerge.merge(cloudinary_config, chef_environment_config)
       config = Apps::Cloudinary::DeepToHash.to_hash(node['framework_environment'] => framework_environment_config)
 
       file "#{app['deploy_to']}/shared/config/cloudinary.yml" do
