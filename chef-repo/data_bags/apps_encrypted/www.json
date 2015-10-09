@@ -1,0 +1,8 @@
+{
+  "id": "www",
+  "cloudinary": {
+    "production_secret": {
+      "api_secret": "secret"
+    }
+  }
+}

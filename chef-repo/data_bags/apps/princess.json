@@ -9,9 +9,13 @@
   },
   "cloudinary": {
     "staging": {
-      "cloud_name": "abcd1234",
-      "api_key": "efgh5678",
-      "api_secret": "ijkl9012"
+      "cloud_name": "cloud_name",
+      "api_key": "api_key",
+      "api_secret": "api_secret"
+    },
+    "production_secret": {
+      "cloud_name": "cloud_name",
+      "api_key": "api_key"
     }
   }
 }
