@@ -19,6 +19,7 @@ data bags:
 - apps_encrypted:
   - secret secret_file
   - www
+  - princess
 
 nodes:
 - ec2 1:
