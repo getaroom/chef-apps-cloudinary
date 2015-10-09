@@ -36,9 +36,6 @@ search :apps do |base_app|
       chef_environment_config = cloudinary_config.fetch(node.chef_environment, {})
 
       framework_environment_config = Chef::Mixin::DeepMerge.merge(cloudinary_config, chef_environment_config)
-      framework_environment_config['cloud_name'] ||= node['cloudinary']['cloud_name']
-      framework_environment_config['api_key'] ||= node['cloudinary']['api_key']
-      framework_environment_config['api_secret'] ||= node['cloudinary']['api_secret']
       config = Apps::Cloudinary::DeepToHash.to_hash(node['framework_environment'] => framework_environment_config)
 
       file "#{app['deploy_to']}/shared/config/cloudinary.yml" do
