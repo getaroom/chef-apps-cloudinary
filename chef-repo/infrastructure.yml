@@ -20,6 +20,7 @@ data bags:
   - secret secret_file
   - www
   - princess
+- users:
 
 nodes:
 - ec2 1:

@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "foodcritic"
+gem "foodcritic", "< 5"
 gem "rake"
 
 group :development do
